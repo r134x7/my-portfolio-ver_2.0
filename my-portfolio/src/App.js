@@ -1,3 +1,8 @@
 import './App.css';
+import { Button } from '@mantine/core';
 
-// export default App;
+export function MyApp() {
+  return <Button>Hello world!</Button>;
+}
+
+export default MyApp;
