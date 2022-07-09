@@ -1,8 +1,7 @@
 import './App.css';
-import { Button } from '@mantine/core';
+import PortfolioContainer from "./components/PortfolioContainer";
 
-export function MyApp() {
-  return <Button>Hello world!</Button>;
-}
+const App = () => <PortfolioContainer />;
 
-export default MyApp;
+
+export default App;
