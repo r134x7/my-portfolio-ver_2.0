@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Videos from "./pages/Videos";
@@ -33,6 +34,7 @@ export default function Navigation() {
         <div>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
+            <Footer />
         </div>
     );
 }
