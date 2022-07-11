@@ -1,9 +1,13 @@
 import React from "react";
+import c1b from "../../assets/images/c1b.png"
 
 export default function About() {
     return (
         <div>
             <h1>About me</h1>
+
+            <img src={c1b} alt="Avatar" />
+            
             <p>
             I am Github user r134x7 also known as ggx2ac in some places, I am currently
 studying full-stack web development via coding bootcamp to gain programming skills

@@ -9,6 +9,7 @@ export default function Portfolio(props) {
             {item.name}
             {item.deployedApp}
             {item.githubRepo}
+            <img src={item.image} alt={`Project ${item.id}`} />
           </li>
         ))}
       </ul>
