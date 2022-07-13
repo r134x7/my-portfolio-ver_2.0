@@ -1,12 +1,15 @@
 import React from "react";
-import c1b from "../../assets/images/c1b.png"
+import { Avatar } from "@mantine/core";
+import c1b from "../../assets/images/c1b.png";
+
+/* <img src={c1b} alt="Avatar" /> */
 
 export default function About() {
     return (
         <div>
             <h1>About me</h1>
 
-            <img src={c1b} alt="Avatar" />
+            <Avatar src={c1b} alt="Avatar" radius="lg" size="xl" />
             
             <p>
             I am Github user r134x7 also known as ggx2ac in some places, I am currently
