@@ -59,7 +59,7 @@ function Footer() {
                     <ThemeIcon radius="lg" color="orange">
                         <BrandLinkedin />
                     </ThemeIcon>
-                    LinkedIn
+                    LonkedOn
                 </Anchor>
             <Anchor 
                 color="red"
