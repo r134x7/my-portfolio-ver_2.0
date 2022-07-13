@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const emailValidation = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ ; // regex taken from 16-Stu_React-Forms utils/helpers.js
 
-// this form has two validate functions, one when clicking outside a text field and the other when submitting.
+// this form has three validate functions, one when clicking outside a text field, one while typing in your email address and the other when submitting the form.
 
 function Contact() {
   const form = useForm({ // useForm is a Mantine function
@@ -31,6 +31,9 @@ const [nameError, setNameError] = useState(""); // error state when clicking out
 const [emailError, setEmailError] = useState(""); // error state when clicking outside text field
 const [messageError, setMessageError] = useState(""); // error state when clicking outside text field
 
+const [emailText, setEmailText] = useState(""); // to check text input for email to flag for error
+const [emailValErr, setEmailValErr] = useState(""); // error state when typing an incorrect email
+
 const nameRef = useClickOutside(() => { // Mantine function
     if (form.getInputProps("name").value.length < 2 && nameOpened) { // uses name input from form, checks if nameOpened is true
         setNameError("Name must have at least 2 letters."); // error displays in span
@@ -43,7 +46,7 @@ const nameRef = useClickOutside(() => { // Mantine function
 
 const emailRef = useClickOutside(() => { // Mantine function
     if (!emailValidation.test(form.getInputProps("email").value) && emailOpened) { // uses email input from form and does validation check, checks if nameOpened is true
-        setEmailError("Invalid email."); // error displays in span
+        setEmailError("Please enter your email."); // error displays in span
         setEmailOpened(false);
     } else if (emailOpened) {
         setEmailError(""); // if error occurred, it will be removed on correct input
@@ -60,6 +63,16 @@ const messageRef = useClickOutside(() => {
         setMessageOpened(false);
     }
 });
+
+function handleChange(event) {
+  setEmailText(event.target.value);
+
+  if (!emailValidation.test(emailText)) {
+    setEmailValErr("This is not a valid email address.")
+  } else {
+    setEmailValErr("");
+  }
+}
 
   return ( // Box, TextInput, Textarea, Group and Button are Mantine properties
     <Box sx={{ maxWidth: 300 }} mx="auto">
@@ -82,7 +95,9 @@ const messageRef = useClickOutside(() => {
             label="Email"
             placeholder="your@email.com"
             {...form.getInputProps('email')} // uses email input on submit
-        />
+            value={emailText} // the order of this matters, needs to be placed below .getInputProps
+            onChange={handleChange} // changes state when text is entered, the order of this matters, needs to be placed below .getInputProps
+            />
 
         <Textarea // message field
             onClick={() => setMessageOpened(true)} // changes state when clicked
@@ -94,10 +109,10 @@ const messageRef = useClickOutside(() => {
         />
 
         {/* where the outside click errors occur */}
-        <span> {`${nameError} ${emailError} ${messageError}`}</span>
+        <span> {`${nameError} ${emailError} ${emailValErr} ${messageError}`}</span>
 
         <Group position="left" mt="md">
-          <Button type="submit">Submit</Button>
+          <Button color={"teal"} type="submit">Submit</Button>
         </Group>
       </form>
     </Box>
