@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Group, createStyles } from '@mantine/core';
+import { Anchor, Group, createStyles, ThemeIcon } from '@mantine/core';
 import { User, Files, Message, Video, FileTypography } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme, _params, getRef) => ({
@@ -50,6 +50,9 @@ function Header({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("About")}
                 className={currentPage === "About" ? "nav-link active" : "nav-link"}
                 >
+                    <ThemeIcon radius="lg" color="cyan">
+                        <User />
+                    </ThemeIcon>
                     About
                 </Anchor>
             <Anchor 
@@ -59,6 +62,9 @@ function Header({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Portfolio")}
                 className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
                 >
+                    <ThemeIcon radius="lg" color="orange">
+                        <Files />
+                    </ThemeIcon>
                     Portfolio
                 </Anchor>
             <Anchor 
@@ -68,6 +74,9 @@ function Header({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Videos")}
                 className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
                 >
+                    <ThemeIcon radius="lg" color="red">
+                        <Video />
+                    </ThemeIcon>
                     Videos
                 </Anchor>
             <Anchor 
@@ -77,6 +86,9 @@ function Header({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Contact")}
                 className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
                 >
+                    <ThemeIcon radius="lg" color="green">
+                        <Message />
+                    </ThemeIcon>
                     Contact
                 </Anchor>
             <Anchor
@@ -86,6 +98,9 @@ function Header({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("Resume")}
             className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
             >
+                    <ThemeIcon radius="lg" color="gray">
+                        <FileTypography />
+                    </ThemeIcon>
                     Resume
                 </Anchor>
                 </Group>
