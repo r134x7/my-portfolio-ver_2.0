@@ -24,7 +24,7 @@ export default function Resume() {
         </p>
         <Space h="md" />
         <h2>
-        Front-end Proficencies
+        Front-end Proficiencies
         </h2>
         <List size="sm">
           <List.Item>HTML5, CSS3 and JavaScript ES6+.</List.Item>
@@ -37,7 +37,7 @@ export default function Resume() {
 <Space h="md" />
 
         <h2>
-        Back-end Proficencies
+        Back-end Proficiencies
         </h2>
         <List size="sm">
           <List.Item>Node.js (JavaScript back-end).</List.Item>
@@ -49,7 +49,7 @@ export default function Resume() {
 
 <Space h="md" />
         <h2>
-        Miscellaneous Proficencies
+        Miscellaneous Proficiencies
         </h2>
         <List size="sm">
           <List.Item>Engram Keyboard Layout with Caps Lock used as Backspace. (Primary typing method)</List.Item>

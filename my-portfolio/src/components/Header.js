@@ -1,6 +1,6 @@
 import React from "react";
-import { Anchor, Group, createStyles, ThemeIcon } from '@mantine/core';
-import { User, Files, Message, Video, FileTypography } from 'tabler-icons-react';
+import { Anchor, Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme } from '@mantine/core';
+import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme, _params, getRef) => ({
   wrapper: {
@@ -46,6 +46,8 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 function Header({ currentPage, handlePageChange }) {
 
     const { classes } = useStyles();
+    const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+    const dark = colorScheme === 'dark';
 
     return (
         <div className={classes.wrapper} >
@@ -111,7 +113,15 @@ function Header({ currentPage, handlePageChange }) {
                     </ThemeIcon>
                     Resume
                 </Anchor>
-                </Group>
+                <ActionIcon
+                    variant="outline"
+                    color={dark ? 'yellow' : 'blue'}
+                    onClick={() => toggleColorScheme()}
+                    title="Toggle mode"
+                >
+                    {dark ? <Sun size={18} /> : <MoonStars size={18} />}
+                </ActionIcon>
+            </Group>
         </div>
       );
 }

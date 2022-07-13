@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MantineProvider, ColorSchemeProvider } from '@mantine/core';
 import Header from "./Header";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -30,11 +31,19 @@ export default function Navigation() {
 
     const handlePageChange = (page) => setCurrentPage(page);
 
+    const [colorScheme, setColorScheme] = useState('light');
+    const toggleColorScheme = (value) =>
+      setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+
     return (
-        <div>
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
-            <Footer />
-        </div>
+        <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+            <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+                <div>
+                    <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+                    {renderPage()}
+                    <Footer />
+                </div>
+            </MantineProvider>
+        </ColorSchemeProvider>
     );
 }
