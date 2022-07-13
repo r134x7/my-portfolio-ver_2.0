@@ -5,19 +5,13 @@ import c1b from "../../assets/images/c1b.png";
 export default function About() {
     return (
         <Box sx={(theme) => ({
-            // maxWidth: '300px',
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap",
             alignContent: "center",
             alignItems: "baseline",
             padding: "2em",
-            '@media (max-width: 768px)': {
-               paddingLeft: "10em",
-               paddingRight: "10em",
-            },
             '@media (max-width: 600px)': {
-                padding: "2em",
                flexDirection: "row"
              },
              h1: {
