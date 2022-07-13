@@ -63,6 +63,8 @@ const messageRef = useClickOutside(() => {
 
   return ( // Box, TextInput, Textarea, Group and Button are Mantine properties
     <Box sx={{ maxWidth: 300 }} mx="auto">
+      <h1>Contact</h1>
+      <p>This contact form is for demonstration purposes only. To contact me please email to: r134x7@gmx.com </p>
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
         <TextInput //name field
             onClick={() => setNameOpened(true)} // changes state when clicked
