@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Text, Badge, Button, Group, useMantineTheme, SimpleGrid } from '@mantine/core';
+import { Card, Image, Text, Badge, Button, Group, useMantineTheme, SimpleGrid, Box } from '@mantine/core';
 
 export default function Portfolio(props) {
   const theme = useMantineTheme();
@@ -9,6 +9,9 @@ export default function Portfolio(props) {
     : theme.colors.gray[7];
 
   return (
+    <Box>
+      <h1>Portfolio</h1>
+
     <SimpleGrid cols={2}
     breakpoints={[
       { maxWidth: 800, cols: 1, spacing: 'sm' },
@@ -16,7 +19,7 @@ export default function Portfolio(props) {
     >
     {props.works.map(item => 
 
-      <div style={{ width: 360, margin: 'auto' }} key={item.id}>
+<div style={{ width: 360, margin: 'auto' }} key={item.id}>
       <Card shadow="sm" p="lg">
         <Card.Section>
           <Image height={220} src={item.image} alt={`Project ${item.id}`} />
@@ -44,6 +47,7 @@ export default function Portfolio(props) {
       )
     }
     </SimpleGrid>
+    </Box>
   );
 }
 
