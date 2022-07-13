@@ -63,7 +63,7 @@ function Footer() {
                 </Anchor>
             <Anchor 
                 color="red"
-                href="#video"
+                href="https://www.youtube.com/user/guiltygearx2ac"
                 >
                     <ThemeIcon radius="lg" color="red">
                         <BrandYoutube />

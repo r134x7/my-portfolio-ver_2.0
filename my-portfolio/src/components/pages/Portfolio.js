@@ -9,7 +9,12 @@ export default function Portfolio(props) {
     : theme.colors.gray[7];
 
   return (
-    <Box>
+    <Box sx={(theme) => ({
+      h1: {
+        paddingLeft: "2em",
+        paddingRight: "2em",
+      }
+    })}>
       <h1>Portfolio</h1>
 
     <SimpleGrid cols={2}
