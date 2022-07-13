@@ -6,6 +6,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   wrapper: {
     // subscribe to color scheme changes right in your styles
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+    // backgroundColor: "#307351ff",
     // maxWidth: 400,
     width: '100%',
     height: 180,
@@ -15,6 +16,12 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: theme.radius.sm,
+    h1: {
+        paddingRight: "1em",
+    },
+    ":active": {
+        color: "crimson"
+    },
 
     // Dynamic media queries, define breakpoints in theme, use anywhere
     [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
@@ -42,6 +49,7 @@ function Header({ currentPage, handlePageChange }) {
 
     return (
         <div className={classes.wrapper} >
+            <h1>r134x7</h1>
         <Group className={classes.child} position="apart" spacing="lg">
             <Anchor
                 color="teal"

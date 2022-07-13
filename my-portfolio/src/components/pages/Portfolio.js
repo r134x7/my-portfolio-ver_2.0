@@ -14,7 +14,7 @@ export default function Portfolio(props) {
 
     <SimpleGrid cols={2}
     breakpoints={[
-      { maxWidth: 800, cols: 1, spacing: 'sm' },
+      { maxWidth: 768, cols: 1, spacing: 'sm' },
     ]}
     >
     {props.works.map(item => 
