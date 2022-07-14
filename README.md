@@ -10,7 +10,7 @@
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Deployed App](#deployedApp)
+  - [Deployed App](#deployed-app)
   - [Tests](#tests)
   - [Questions](#questions)
 
@@ -20,7 +20,7 @@
 
   # Usage
   
-  ![Displaying the videos section of my portfolio webpage](./my-portfolio/readme_assets/myp3f.jpg)
+  ![Displaying the videos section of my portfolio webpage](readme_assets/myp3f.jpg)
   
 
   # Deployed App
