@@ -83,7 +83,7 @@ const works = [
     },
 ]
 
-function Project() {
+function Project() { // exporting the props to Project.js
     return <Portfolio works={works} />;    
 }
 

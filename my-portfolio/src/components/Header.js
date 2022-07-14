@@ -2,12 +2,9 @@ import React from "react";
 import { Anchor, Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme } from '@mantine/core';
 import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
 
-const useStyles = createStyles((theme, _params, getRef) => ({
-  wrapper: {
-    // subscribe to color scheme changes right in your styles
+const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
+  wrapper: { // css-in-js settings for wrapper
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-    // backgroundColor: "#307351ff",
-    // maxWidth: 400,
     width: '100%',
     height: 180,
     display: 'flex',
@@ -32,7 +29,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     },
   },
 
-  child: {
+  child: { // css-in-js settings for child DOM elements
     // assign ref to element
     ref: getRef('child'),
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
@@ -45,193 +42,85 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 
 function Header({ currentPage, handlePageChange }) {
 
-    const { classes } = useStyles();
-    const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-    const dark = colorScheme === 'dark';
+    const { classes } = useStyles(); // gets the css-in-js wrapper and childs by destructuring
+    const { colorScheme, toggleColorScheme } = useMantineColorScheme(); // is referencing the useState in Header.js and using useMantineColorScheme function for toggling dark/light mode.
+    const dark = colorScheme === 'dark'; // state is used as an if statement to toggle the light/dark mode
 
     return (
         <div className={classes.wrapper} >
             <h1>r134x7</h1>
-        <Group className={classes.child} position="apart" spacing="lg">
-            <Anchor
-                color="teal"
-                icon={<User size={14} />}
-                href="#about"
-                onClick={() => handlePageChange("About")}
-                className={currentPage === "About" ? "nav-link active" : "nav-link"}
-                >
-                    <ThemeIcon radius="lg" color="cyan">
-                        <User />
-                    </ThemeIcon>
-                    About
+            <Group className={classes.child} position="apart" spacing="lg">
+                <Anchor
+                    color="teal"
+                    icon={<User size={14} />}
+                    href="#about"
+                    onClick={() => handlePageChange("About")}
+                    className={currentPage === "About" ? "nav-link active" : "nav-link"}
+                    >
+                        <ThemeIcon radius="lg" color="cyan">
+                            <User />
+                        </ThemeIcon>
+                        About
                 </Anchor>
-            <Anchor 
-                color="teal"
-                icon={<Files size={14} />}
-                href="#portfolio"
-                onClick={() => handlePageChange("Portfolio")}
-                className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-                >
-                    <ThemeIcon radius="lg" color="orange">
-                        <Files />
-                    </ThemeIcon>
-                    Portfolio
+                <Anchor 
+                    color="teal"
+                    icon={<Files size={14} />}
+                    href="#portfolio"
+                    onClick={() => handlePageChange("Portfolio")}
+                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
+                    >
+                        <ThemeIcon radius="lg" color="orange">
+                            <Files />
+                        </ThemeIcon>
+                        Portfolio
                 </Anchor>
-            <Anchor 
-                color="teal"
-                icon={<Video size={14} />}
-                href="#video"
-                onClick={() => handlePageChange("Videos")}
-                className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
-                >
-                    <ThemeIcon radius="lg" color="red">
-                        <Video />
-                    </ThemeIcon>
-                    Videos
+                <Anchor 
+                    color="teal"
+                    icon={<Video size={14} />}
+                    href="#video"
+                    onClick={() => handlePageChange("Videos")}
+                    className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
+                    >
+                        <ThemeIcon radius="lg" color="red">
+                            <Video />
+                        </ThemeIcon>
+                        Videos
                 </Anchor>
-            <Anchor 
-                color="teal"
-            icon={<Message size={14} />}
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
-                className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-                >
-                    <ThemeIcon radius="lg" color="green">
-                        <Message />
-                    </ThemeIcon>
-                    Contact
+                <Anchor 
+                    color="teal"
+                    icon={<Message size={14} />}
+                    href="#contact"
+                    onClick={() => handlePageChange("Contact")}
+                    className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+                    >
+                        <ThemeIcon radius="lg" color="green">
+                            <Message />
+                        </ThemeIcon>
+                        Contact
                 </Anchor>
-            <Anchor
-                color="teal"
-            icon={<FileTypography size={14} />}
-            href="#resume"
-            onClick={() => handlePageChange("Resume")}
-            className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-            >
-                    <ThemeIcon radius="lg" color="gray">
-                        <FileTypography />
-                    </ThemeIcon>
-                    Resume
+                <Anchor
+                    color="teal"
+                    icon={<FileTypography size={14} />}
+                    href="#resume"
+                    onClick={() => handlePageChange("Resume")}
+                    className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+                    >
+                        <ThemeIcon radius="lg" color="gray">
+                            <FileTypography />
+                        </ThemeIcon>
+                        Resume
                 </Anchor>
                 <ActionIcon
-                    variant="outline"
-                    color={dark ? 'yellow' : 'blue'}
-                    onClick={() => toggleColorScheme()}
-                    title="Toggle mode"
-                >
-                    {dark ? <Sun size={18} /> : <MoonStars size={18} />}
+                        variant="outline"
+                        color={dark ? 'yellow' : 'blue'}
+                        onClick={() => toggleColorScheme()}
+                        title="Toggle mode"
+                    >
+                        {dark ? <Sun size={18} /> : <MoonStars size={18} />}
                 </ActionIcon>
             </Group>
         </div>
       );
 }
-
-// function Header({ currentPage, handlePageChange }) {
-//     const firstTabRef = useRef(<a href="#about"
-//     onClick={() => handlePageChange("About")}
-//     className={currentPage === "About" ? "nav-link active" : "nav-link"}>About</a>);
-
-//     return (
-//         <Tabs color="teal">
-//           <Tabs.Tab ref={firstTabRef} label="About" icon={<User size={14} />}>
-//             <Text
-//                 href="#about"
-//                 onClick={() => handlePageChange("About")}
-//                 className={currentPage === "About" ? "nav-link active" : "nav-link"}
-//                 >
-//                     About
-//                 </Text>
-//                 </Tabs.Tab>
-//           <Tabs.Tab label="Portfolio" icon={<Files size={14} />}>
-//             <Anchor 
-//                 href="#portfolio"
-//                 onClick={() => handlePageChange("Portfolio")}
-//                 className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Portfolio
-//                 </Anchor>
-//                 </Tabs.Tab>
-//           <Tabs.Tab label="Videos" icon={<Video size={14} />}>
-//             <a 
-//                 href="#video"
-//                 onClick={() => handlePageChange("Videos")}
-//                 className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Videos
-//                 </a>
-//                 </Tabs.Tab>
-//           <Tabs.Tab label="Contact" icon={<Message size={14} />}>
-//             <a 
-//                 href="#contact"
-//                 onClick={() => handlePageChange("Contact")}
-//                 className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Contact
-//                 </a>
-//                 </Tabs.Tab>
-//           <Tabs.Tab label="Resume" icon={<FileTypography size={14} />}>
-//             <a 
-//                 href="#resume"
-//                 onClick={() => handlePageChange("Resume")}
-//                 className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Resume
-//                 </a>
-//                 </Tabs.Tab>
-//         </Tabs>
-//       );
-// }
-
-// function Header({ currentPage, handlePageChange }) {
-//     return (
-//         <ul>
-//             <li className="nav-item">
-//                 <a 
-//                 href="#about"
-//                 onClick={() => handlePageChange("About")}
-//                 className={currentPage === "About" ? "nav-link active" : "nav-link"}
-//                 >
-//                     About
-//                 </a>
-//             </li>
-//             <li className="nav-item">
-//                 <a 
-//                 href="#portfolio"
-//                 onClick={() => handlePageChange("Portfolio")}
-//                 className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Portfolio
-//                 </a>
-//             </li>
-//             <li className="nav-item">
-//                 <a 
-//                 href="#video"
-//                 onClick={() => handlePageChange("Videos")}
-//                 className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Videos
-//                 </a>
-//             </li>
-//             <li className="nav-item">
-//                 <a 
-//                 href="#contact"
-//                 onClick={() => handlePageChange("Contact")}
-//                 className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Contact
-//                 </a>
-//             </li>
-//             <li className="nav-item">
-//                 <a 
-//                 href="#resume"
-//                 onClick={() => handlePageChange("Resume")}
-//                 className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-//                 >
-//                     Resume
-//                 </a>
-//             </li>
-//         </ul>
-//     )    
-// }
 
 export default Header;

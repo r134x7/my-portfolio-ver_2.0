@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MantineProvider, ColorSchemeProvider } from '@mantine/core';
+import { MantineProvider, ColorSchemeProvider } from '@mantine/core'; // used for light/dark mode. source docs: https://mantine.dev/theming/dark-theme/
 import Header from "./Header";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -31,11 +31,11 @@ export default function Navigation() {
 
     const handlePageChange = (page) => setCurrentPage(page);
 
-    const [colorScheme, setColorScheme] = useState('light');
+    const [colorScheme, setColorScheme] = useState('light'); // when pressing a specific icon it toggles the light/dark mode
     const toggleColorScheme = (value) =>
       setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
-    return (
+    return ( // ColorSchemeProvider, MantineProvider used for light/dark mode. source docs: https://mantine.dev/theming/dark-theme/
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
                 <div>

@@ -2,11 +2,9 @@ import React from "react";
 import { Anchor, Group, createStyles, ThemeIcon } from '@mantine/core';
 import { BrandGithub, BrandLinkedin, BrandYoutube } from 'tabler-icons-react';
 
-const useStyles = createStyles((theme, _params, getRef) => ({
-  wrapper: {
-    // subscribe to color scheme changes right in your styles
+const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
+  wrapper: { // css-in-js settings for wrapper
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-    // maxWidth: 400,
     width: '100%',
     height: 180,
     display: 'flex',
@@ -25,7 +23,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     },
   },
 
-  child: {
+  child: { // css-in-js settings for child DOM elements
     // assign ref to element
     ref: getRef('child'),
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
@@ -38,12 +36,12 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 
 function Footer() {
 
-    const { classes } = useStyles();
+    const { classes } = useStyles(); // gets the css-in-js wrapper and childs by destructuring
 
     return (
         <div className={classes.wrapper} >
-        <Group className={classes.child} position="apart" spacing="lg">
-            <Anchor
+            <Group className={classes.child} position="apart" spacing="lg">
+                <Anchor
                 color="cyan"
                 href="https://github.com/r134x7"
                 >
@@ -52,7 +50,7 @@ function Footer() {
                     </ThemeIcon>
                     GitHub
                 </Anchor>
-            <Anchor 
+                <Anchor 
                 color="orange"
                 href="#"
                 >
@@ -61,7 +59,7 @@ function Footer() {
                     </ThemeIcon>
                     LonkedOn
                 </Anchor>
-            <Anchor 
+                <Anchor 
                 color="red"
                 href="https://www.youtube.com/user/guiltygearx2ac"
                 >
@@ -74,36 +72,5 @@ function Footer() {
         </div>
       );
 }
-
-// function Footer() {
-//     return (
-//         <div>
-//             <ul>
-//                 <li>
-//                     <a 
-//                     href="#GitHub"
-//                     >
-//                     GitHub
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a 
-//                     href="#Linkedin"
-//                     >
-//                     LinkedIn
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a 
-//                     href="#YouTube"
-//                     >
-//                     YouTube
-//                     </a>
-//                 </li>
-//             </ul>
-//         </div>
-//     )
-    
-// }
 
 export default Footer;
