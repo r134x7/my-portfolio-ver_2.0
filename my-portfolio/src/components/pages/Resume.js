@@ -30,6 +30,8 @@ export default function Resume() {
           <List.Item>HTML5, CSS3 and JavaScript ES6+.</List.Item>
           <List.Item>React</List.Item>
           <List.Item>Mantine (React component library)</List.Item>
+          <List.Item>TypeScript</List.Item>
+          <List.Item>Redux Toolkit</List.Item>
           <List.Item>Responsive web design.</List.Item>
           <List.Item>Progressive web design.</List.Item>
         </List>
@@ -44,6 +46,7 @@ export default function Resume() {
           <List.Item>Express framework.</List.Item>
           <List.Item>MySQL database, Object Relational Mapping using NPM Sequelize.</List.Item>
           <List.Item>MongoDB database, Object Relational Mapping using NPM Mongoose.</List.Item>
+          <List.Item>GraphQL API (For CRUD operations like REST API).</List.Item>
           <List.Item>Model-View-Controller folder structure.</List.Item>
         </List>
 
