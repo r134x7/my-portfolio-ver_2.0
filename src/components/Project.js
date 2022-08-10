@@ -1,11 +1,11 @@
 import React from "react";
 import Portfolio from "./pages/Portfolio";
-import my1 from "../assets/images/my1.jpg"
 import my2 from "../assets/images/my2.jpg"
 import my3 from "../assets/images/my3.jpg"
 import my7 from "../assets/images/my7.jpg"
 import my8 from "../assets/images/my8.jpg"
 import my9 from "../assets/images/my9.jpg"
+import my10 from "../assets/images/my10.jpg"
 
 const works = [
     {
@@ -23,14 +23,14 @@ const works = [
     {
         id: 1,
         name: "Nintendo Earnings Data and Other Video Game Companies",
-        deployedApp: "https://github.com/r134x7/nintendo-earnings-data-and-other-video-game-companies",
+        deployedApp: "https://r134x7.github.io/nintendo-earnings-data-and-other-video-game-companies/",
         githubRepo: "https://github.com/r134x7/nintendo-earnings-data-and-other-video-game-companies",
-        image: my1,
-        badge: "Python",
+        image: my10,
+        badge: "Python and TypeScript",
         badgeColour: "blue",
-        buttonAppText: "There is no Deployed App",
+        buttonAppText: "Click here to Deployed App",
         buttonRepoText: "Click here to GitHub Repo",
-        textDescription: "Takes financial data from companies and outputs it into tables in code format. Lots of data manipulation used to display data you would not find in a company’s earnings release."
+        textDescription: " An ever-evolving personal project, what first started out with using Java Code (not on GitHub) then refactored into Python code to output data from earnings results of video game companies to post online now includes a Front-End deployed web app using React and TypeScript so that people can now view that data from my webpage. Lots of data manipulation used to display data you would not find in a company’s earnings release."
     },
     {
         id: 3,
