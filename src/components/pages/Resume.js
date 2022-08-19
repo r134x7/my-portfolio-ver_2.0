@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Space, List } from "@mantine/core";
+import { Box, Space, List, ThemeIcon} from "@mantine/core";
+import { BrandHtml5, BrandCss3, BrandJavascript, BrandReactNative, CirclePlus, DeviceMobile, BrandPython, Keyboard, Brackets} from 'tabler-icons-react';
 
 export default function Resume() {
   return (
@@ -26,14 +27,70 @@ export default function Resume() {
         <h2>
         Front-end Proficiencies
         </h2>
-        <List size="sm">
-          <List.Item>HTML5, CSS3 and JavaScript ES6+.</List.Item>
-          <List.Item>React</List.Item>
-          <List.Item>Mantine (React component library)</List.Item>
-          <List.Item>TypeScript</List.Item>
-          <List.Item>Redux Toolkit</List.Item>
-          <List.Item>Responsive web design.</List.Item>
-          <List.Item>Progressive web design.</List.Item>
+        <List  size="sm">
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='orange' >
+                <BrandHtml5 />
+              </ThemeIcon>
+          }>
+            HTML5 
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color="blue" >
+                <BrandCss3 />
+              </ThemeIcon>
+          }>
+            CSS3
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color="yellow" >
+                <BrandJavascript />
+              </ThemeIcon>
+          }>
+            JavaScript ES6+
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='cyan' >
+                <BrandReactNative />
+              </ThemeIcon>
+          }>
+            React
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
+            Mantine (React component library)
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
+            TypeScript
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
+            Redux Toolkit
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='blue' >
+                <DeviceMobile />
+              </ThemeIcon>
+          }>
+            Responsive web design
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
+            Progressive web design
+          </List.Item>
         </List>
 
 <Space h="md" />
@@ -42,12 +99,36 @@ export default function Resume() {
         Back-end Proficiencies
         </h2>
         <List size="sm">
-          <List.Item>Node.js (JavaScript back-end).</List.Item>
-          <List.Item>Express framework.</List.Item>
-          <List.Item>MySQL database, Object Relational Mapping using NPM Sequelize.</List.Item>
-          <List.Item>MongoDB database, Object Relational Mapping using NPM Mongoose.</List.Item>
-          <List.Item>GraphQL API (For CRUD operations like REST API).</List.Item>
-          <List.Item>Model-View-Controller folder structure.</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>Node.js (JavaScript back-end).</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>Express framework.</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>MySQL database, Object Relational Mapping using NPM Sequelize.</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>MongoDB database, Object Relational Mapping using NPM Mongoose.</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>GraphQL API (For CRUD operations like REST API).</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>Model-View-Controller folder structure.</List.Item>
         </List>
 
 <Space h="md" />
@@ -55,9 +136,21 @@ export default function Resume() {
         Miscellaneous Proficiencies
         </h2>
         <List size="sm">
-          <List.Item>Engram Keyboard Layout with Caps Lock used as Backspace. (Primary typing method)</List.Item>
-          <List.Item>Python programming language: self-taught.</List.Item>
-          <List.Item>Problem solving skills.</List.Item>
+        <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='red' >
+                <Keyboard />
+              </ThemeIcon>
+          }>Engram Keyboard Layout with Caps Lock used as Backspace. (Primary typing method)</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='cyan' >
+                <BrandPython />
+              </ThemeIcon>
+          }>Python programming language: self-taught.</List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='violet' >
+                <Brackets />
+              </ThemeIcon>
+          }>Problem solving skills.</List.Item>
         </List>
 
     </Box>

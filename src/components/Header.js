@@ -108,7 +108,7 @@ function Header({ currentPage, handlePageChange }) {
                         <ThemeIcon radius="lg" color="gray">
                             <FileTypography />
                         </ThemeIcon>
-                        Resume
+                        Resume/Skills
                 </Anchor>
                 <ActionIcon
                         variant="outline"
