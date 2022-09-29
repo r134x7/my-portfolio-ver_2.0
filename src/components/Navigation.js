@@ -31,7 +31,7 @@ export default function Navigation() {
 
     const handlePageChange = (page) => setCurrentPage(page);
 
-    const [colorScheme, setColorScheme] = useState('light'); // when pressing a specific icon it toggles the light/dark mode
+    const [colorScheme, setColorScheme] = useState('dark'); // when pressing a specific icon it toggles the light/dark mode
     const toggleColorScheme = (value) =>
       setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 

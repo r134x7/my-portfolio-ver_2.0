@@ -1,7 +1,7 @@
 import React from "react";
 import Portfolio from "./pages/Portfolio";
 import my2 from "../assets/images/my2.jpg"
-import my3 from "../assets/images/my3.jpg"
+import my3 from "../assets/images/tech2.jpg"
 import my7 from "../assets/images/my7.jpg"
 import my8 from "../assets/images/my8.jpg"
 import my9 from "../assets/images/my9.jpg"
@@ -70,15 +70,15 @@ const works = [
     },
     {
         id: 6,
-        name: "PWA JavaScript Text Editor",
-        deployedApp: "https://morning-chamber-10447.herokuapp.com/",
-        githubRepo: "https://github.com/r134x7/pwa-javascript-text-editor",
+        name: "Tech News Java API",
+        deployedApp: "https://rocky-waters-09134.herokuapp.com/",
+        githubRepo: "https://github.com/r134x7/tech-news-java-api",
         image: my3,
-        badge: "JavaScript",
-        badgeColour: "yellow",
+        badge: "Java",
+        badgeColour: "orange",
         buttonAppText: "Click here to Deployed App",
         buttonRepoText: "Click here to GitHub Repo",
-        textDescription: "A progressive web app that uses a client/server folder structure to make use of webpack to bundle and minify the client files. The text-editor uses JavaScript syntax highlighting thanks to code-mirror. The progressive web app makes use of service workers and workbox CacheFirst strategies to allow the text-editor to work while offline. The web app is installable from the browser. The text-editor saves data using indexDB."
+        textDescription: "A tech news blog API built on Java front and back-end frameworks. This project is mainly focused on building the back-end and API to handle CRUD requests using Java. You create an account to post links to various tech sites for which people can make comments on the post made, all posts appear on the homepage. This project uses the MVC layout with Spring Boot for the back-end, MySQL for the database and, Thymeleaf for the front-end."
 
     },
 ]

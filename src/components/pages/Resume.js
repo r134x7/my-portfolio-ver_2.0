@@ -147,6 +147,11 @@ export default function Resume() {
               </ThemeIcon>
           }>Python programming language: self-taught.</List.Item>
           <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>Java programming language: self-taught.</List.Item>
+          <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='violet' >
                 <Brackets />
               </ThemeIcon>
