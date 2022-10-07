@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Avatar, Box, Space, Text } from "@mantine/core";
 import { useInterval } from "@mantine/hooks";
-import c1b from "../../assets/images/c1b.png";
+import c1b from "../public/images/c1b.png";
 
 export default function About() {
 
@@ -60,7 +60,7 @@ export default function About() {
         })}>
             <h1>About me</h1>
             <Space h="md" />
-            <Avatar src={c1b} alt="Avatar" radius="lg" size="xl" />
+            <Avatar src={c1b.src} alt="Avatar" radius="lg" size="xl" />
             <Space h="md" />
             <Text>
                 {text}

@@ -1,11 +1,12 @@
 import React from "react";
-import Portfolio from "./pages/Portfolio";
-import my2 from "../assets/images/my2.jpg"
-import my3 from "../assets/images/tech2.jpg"
-import my7 from "../assets/images/my7.jpg"
-import my8 from "../assets/images/my8.jpg"
-import my9 from "../assets/images/my9.jpg"
-import my10 from "../assets/images/my10.jpg"
+import Image from "next/image";
+import Portfolio from "../pages/portfolio";
+import my2 from "../public/images/my2.jpg"
+import my3 from "../public/images/tech2.jpg"
+import my7 from "../public/images/my7.jpg"
+import my8 from "../public/images/my8.jpg"
+import my9 from "../public/images/my9.jpg"
+import my10 from "../public/images/my10.jpg"
 
 const works = [
     {
