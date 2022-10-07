@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Portfolio from "../pages/portfolio";
 import my2 from "../public/images/my2.jpg"
 import my3 from "../public/images/tech2.jpg"
@@ -14,7 +13,7 @@ const works = [
         name: "Project S.C.A.L.E.",
         deployedApp: "https://ambitions-scale-up.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/project-scale",
-        image: my8,
+        image: my8.src,
         badge: "TypeScript",
         badgeColour: "blue",
         buttonAppText: "Click here to Deployed App",
@@ -26,7 +25,7 @@ const works = [
         name: "Nintendo Earnings Data and Other Video Game Companies",
         deployedApp: "https://r134x7.github.io/nintendo-earnings-data-and-other-video-game-companies/",
         githubRepo: "https://github.com/r134x7/nintendo-earnings-data-and-other-video-game-companies",
-        image: my10,
+        image: my10.src,
         badge: "Python and TypeScript",
         badgeColour: "blue",
         buttonAppText: "Click here to Deployed App",
@@ -38,7 +37,7 @@ const works = [
         name: "Infernal Redux Toolkit Shop",
         deployedApp: "https://shrouded-headland-69573.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
-        image: my9,
+        image: my9.src,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -50,7 +49,7 @@ const works = [
         name: "GraphQL Book Search",
         deployedApp: "https://intense-everglades-58353.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/graphql-book-search",
-        image: my7,
+        image: my7.src,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -62,7 +61,7 @@ const works = [
         name: "RunningTracks",
         deployedApp: "https://quiet-reaches-87273.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/RunningTracks",
-        image: my2,
+        image: my2.src,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -74,7 +73,7 @@ const works = [
         name: "Tech News Java API",
         deployedApp: "https://rocky-waters-09134.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/tech-news-java-api",
-        image: my3,
+        image: my3.src,
         badge: "Java",
         badgeColour: "orange",
         buttonAppText: "Click here to Deployed App",

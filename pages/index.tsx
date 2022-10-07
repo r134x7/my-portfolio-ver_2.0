@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './_app';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './_app';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -8,10 +8,16 @@ import App from './_app';
 //     <App />
 //   </React.StrictMode>
 // );
-import type { AppProps } from 'next/app'
+// import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+// function MyApp({ Component, pageProps }: AppProps) {
+//   return <Component {...pageProps} />
+// }
 
-export default MyApp
+// export default MyApp
+import Navigation from "../components/navigation";
+
+const App = () => <Navigation />; // running everything from Navigation.js
+
+
+export default App;

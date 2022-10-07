@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, Text, Badge, Button, Group, useMantineTheme } from '@mantine/core';
-import Image from 'next/image';
+import { Card, Image, Text, Badge, Button, Group, useMantineTheme } from '@mantine/core';
 import b1a from "../public/images/b1a.png";
 
 
@@ -15,7 +14,7 @@ export default function Videos() {
     <div style={{ width: 333, margin: 'auto' }}>
       <Card shadow="sm" p="lg">
         <Card.Section>
-          <Image src={b1a} height={250} alt="Video still" />
+          <Image src={b1a.src} height={250} alt="Video still" />
         </Card.Section>
 
         <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
