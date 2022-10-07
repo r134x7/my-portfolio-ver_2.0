@@ -25,7 +25,7 @@ export default function Videos() {
         </Group>
 
         <Text size="sm" style={{ color: secondaryColor, lineHeight: 1.5 }}>
-        The physics seen in this video are Newton's Laws of Motion, Hooke's Law, Pendulum Motion,  Simple Harmonic Motion and force vectors.
+        The physics seen in this video are Newton&apos;s Laws of Motion, Hooke&apos;s Law, Pendulum Motion,  Simple Harmonic Motion and force vectors.
 
 This video is to assist those playing the game Sayonara Umihara Kawase who have gotten stuck at stages and do not know how to get past obstacles. 
         </Text>
