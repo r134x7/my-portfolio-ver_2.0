@@ -27,7 +27,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
