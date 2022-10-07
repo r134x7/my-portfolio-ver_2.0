@@ -1,16 +1,8 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from "react";
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 import Header from "../components/header";
-import Project from "../components/project";
 import Footer from "../components/footer";
-// import About from "../pages/about";
-import Videos from "../pages/videos";
-import Contact from "../pages/contact";
-import Resume from "../pages/resume";
-import Index from '../pages';
 
 export default function Layout({ children}: {children: React.ReactNode}) {
 

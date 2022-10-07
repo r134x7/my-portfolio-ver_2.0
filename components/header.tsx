@@ -54,63 +54,46 @@ function Header() {
         <div className={classes.wrapper} >
             <h1>r134x7</h1>
             <Group className={classes.child} position="apart" spacing="lg">
-                <Anchor
-                    color="teal"
-                    // href="#about"
-                    // onClick={() => handlePageChange("About")}
-                    // className={currentPage === "About" ? "nav-link active" : "nav-link"}
-                    >
-                        <ThemeIcon radius="lg" color="cyan">
-                            <User />
-                        </ThemeIcon>
-                        <Link href={"/"} >
-                        About
+                        <Link href={"/"}>
+                            <Anchor color={"teal"}>
+                                <ThemeIcon radius="lg" color="cyan">
+                                    <User />
+                                </ThemeIcon>
+                                About
+                            </Anchor>
                         </Link>
-                </Anchor> 
-                <Anchor 
-                    color="teal"
-                    // href="#portfolio"
-                    // onClick={() => handlePageChange("Portfolio")}
-                    // className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-                    >
+                        <Link href={"/portfolio"} >
+                        <Anchor color={"teal"}>
                         <ThemeIcon radius="lg" color="orange">
                             <Files />
                         </ThemeIcon>
                         Portfolio
-                </Anchor>
-                <Anchor 
-                    color="teal"
-                    href="#video"
-                    // onClick={() => handlePageChange("Videos")}
-                    // className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
-                    >
-                        <ThemeIcon radius="lg" color="red">
-                            <Video />
-                        </ThemeIcon>
-                        Videos
-                </Anchor>
-                <Anchor 
-                    color="teal"
-                    href="#contact"
-                    // onClick={() => handlePageChange("Contact")}
-                    // className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-                    >
-                        <ThemeIcon radius="lg" color="green">
-                            <Message />
-                        </ThemeIcon>
+                        </Anchor>
+                        </Link>
+                       <Link href={"/videos"} >
+                        <Anchor color={"teal"}>
+                                <ThemeIcon radius="lg" color="red">
+                                    <Video />
+                                </ThemeIcon>
+                                Videos
+                        </Anchor>
+                        </Link>
+                       <Link href={"/contact"}>
+                        <Anchor color={"teal"}>
+                            <ThemeIcon radius="lg" color="green">
+                                <Message />
+                            </ThemeIcon>
                         Contact
-                </Anchor>
-                <Anchor
-                    color="teal"
-                    href="#resume"
-                    // onClick={() => handlePageChange("Resume")}
-                    // className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-                    >
+                        </Anchor>
+                        </Link>
+                      <Link href={"/resume"}>
+                        <Anchor color={"teal"}>
                         <ThemeIcon radius="lg" color="gray">
                             <FileTypography />
                         </ThemeIcon>
                         Resume/Skills
-                </Anchor>
+                        </Anchor>
+                     </Link>   
                 <ActionIcon
                         variant="outline"
                         color={dark ? 'yellow' : 'blue'}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, Image, Text, Badge, Button, Group, useMantineTheme, SimpleGrid, Box } from '@mantine/core';
+import { works } from '../components/project';
 
-export default function Portfolio(props) {
+export default function Portfolio() {
   const theme = useMantineTheme();
 
   const secondaryColor = theme.colorScheme === 'dark'
@@ -22,7 +23,7 @@ export default function Portfolio(props) {
       { maxWidth: 768, cols: 1, spacing: 'sm' },
     ]}
     >
-    {props.works.map(item => 
+    {works.map(item => 
 
     <div style={{ width: 360, margin: 'auto' }} key={item.id}>
       <Card shadow="sm" p="lg">

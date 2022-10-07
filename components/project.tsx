@@ -7,7 +7,7 @@ import my8 from "../public/images/my8.jpg"
 import my9 from "../public/images/my9.jpg"
 import my10 from "../public/images/my10.jpg"
 
-const works = [
+export const works = [
     {
         id: 1,
         name: "Project S.C.A.L.E.",
@@ -83,8 +83,8 @@ const works = [
     },
 ]
 
-function Project() { // exporting the props to Project.js
-    return <Portfolio works={works} />;    
-}
+// function Project() { // exporting the props to Project.js
+//     return <Portfolio works={works} />;    
+// }
 
-export default Project;
+// export default Project;
