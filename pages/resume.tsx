@@ -58,10 +58,17 @@ export default function Resume() {
           </List.Item>
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='teal' >
-                <CirclePlus />
+                <BrandReactNative />
               </ThemeIcon>
           }>
             Mantine (React component library)
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <BrandReactNative />
+              </ThemeIcon>
+          }>
+            Next.js (React framework)
           </List.Item>
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='teal' >
