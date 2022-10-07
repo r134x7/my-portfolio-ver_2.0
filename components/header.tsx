@@ -52,7 +52,6 @@ function Header({ currentPage, handlePageChange }) {
             <Group className={classes.child} position="apart" spacing="lg">
                 <Anchor
                     color="teal"
-                    icon={<User size={14} />}
                     href="#about"
                     onClick={() => handlePageChange("About")}
                     className={currentPage === "About" ? "nav-link active" : "nav-link"}
@@ -64,7 +63,6 @@ function Header({ currentPage, handlePageChange }) {
                 </Anchor>
                 <Anchor 
                     color="teal"
-                    icon={<Files size={14} />}
                     href="#portfolio"
                     onClick={() => handlePageChange("Portfolio")}
                     className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
@@ -76,7 +74,6 @@ function Header({ currentPage, handlePageChange }) {
                 </Anchor>
                 <Anchor 
                     color="teal"
-                    icon={<Video size={14} />}
                     href="#video"
                     onClick={() => handlePageChange("Videos")}
                     className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
@@ -88,7 +85,6 @@ function Header({ currentPage, handlePageChange }) {
                 </Anchor>
                 <Anchor 
                     color="teal"
-                    icon={<Message size={14} />}
                     href="#contact"
                     onClick={() => handlePageChange("Contact")}
                     className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
@@ -100,7 +96,6 @@ function Header({ currentPage, handlePageChange }) {
                 </Anchor>
                 <Anchor
                     color="teal"
-                    icon={<FileTypography size={14} />}
                     href="#resume"
                     onClick={() => handlePageChange("Resume")}
                     className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
