@@ -64,7 +64,7 @@ const messageRef = useClickOutside(() => {
     }
 });
 
-function handleChange(event) {
+function handleChange(event: any) {
   setEmailText(event.target.value);
 
   if (!emailValidation.test(emailText)) {
