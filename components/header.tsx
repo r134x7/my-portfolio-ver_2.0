@@ -1,6 +1,9 @@
 import React from "react";
 import { Anchor, Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme } from '@mantine/core';
 import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
+import Link from "next/link";
+// import About from "../pages/about";
+import Index from "../pages";
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
   wrapper: { // css-in-js settings for wrapper
@@ -40,7 +43,8 @@ const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage exa
   },
 }));
 
-function Header({ currentPage, handlePageChange }) {
+// function Header({ currentPage, handlePageChange }) {
+function Header() {
 
     const { classes } = useStyles(); // gets the css-in-js wrapper and childs by destructuring
     const { colorScheme, toggleColorScheme } = useMantineColorScheme(); // is referencing the useState in Header.js and using useMantineColorScheme function for toggling dark/light mode.
@@ -52,20 +56,22 @@ function Header({ currentPage, handlePageChange }) {
             <Group className={classes.child} position="apart" spacing="lg">
                 <Anchor
                     color="teal"
-                    href="#about"
-                    onClick={() => handlePageChange("About")}
-                    className={currentPage === "About" ? "nav-link active" : "nav-link"}
+                    // href="#about"
+                    // onClick={() => handlePageChange("About")}
+                    // className={currentPage === "About" ? "nav-link active" : "nav-link"}
                     >
                         <ThemeIcon radius="lg" color="cyan">
                             <User />
                         </ThemeIcon>
+                        <Link href={"/"} >
                         About
-                </Anchor>
+                        </Link>
+                </Anchor> 
                 <Anchor 
                     color="teal"
-                    href="#portfolio"
-                    onClick={() => handlePageChange("Portfolio")}
-                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
+                    // href="#portfolio"
+                    // onClick={() => handlePageChange("Portfolio")}
+                    // className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
                     >
                         <ThemeIcon radius="lg" color="orange">
                             <Files />
@@ -75,8 +81,8 @@ function Header({ currentPage, handlePageChange }) {
                 <Anchor 
                     color="teal"
                     href="#video"
-                    onClick={() => handlePageChange("Videos")}
-                    className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
+                    // onClick={() => handlePageChange("Videos")}
+                    // className={currentPage === "Videos" ? "nav-link active" : "nav-link"}
                     >
                         <ThemeIcon radius="lg" color="red">
                             <Video />
@@ -86,8 +92,8 @@ function Header({ currentPage, handlePageChange }) {
                 <Anchor 
                     color="teal"
                     href="#contact"
-                    onClick={() => handlePageChange("Contact")}
-                    className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+                    // onClick={() => handlePageChange("Contact")}
+                    // className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
                     >
                         <ThemeIcon radius="lg" color="green">
                             <Message />
@@ -97,8 +103,8 @@ function Header({ currentPage, handlePageChange }) {
                 <Anchor
                     color="teal"
                     href="#resume"
-                    onClick={() => handlePageChange("Resume")}
-                    className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+                    // onClick={() => handlePageChange("Resume")}
+                    // className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
                     >
                         <ThemeIcon radius="lg" color="gray">
                             <FileTypography />
