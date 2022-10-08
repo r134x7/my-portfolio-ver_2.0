@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Space, List, ThemeIcon} from "@mantine/core";
 import { BrandHtml5, BrandCss3, BrandJavascript, BrandReactNative, CirclePlus, DeviceMobile, BrandPython, Keyboard, Brackets} from 'tabler-icons-react';
 

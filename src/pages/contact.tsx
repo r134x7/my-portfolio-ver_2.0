@@ -1,4 +1,3 @@
-import React from 'react';
 import { TextInput, Textarea, Button, Group, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useClickOutside } from '@mantine/hooks';

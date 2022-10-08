@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Avatar, Box, Space, Text } from "@mantine/core";
 import { useInterval } from "@mantine/hooks";
 import c1b from "../images/c1b.png";

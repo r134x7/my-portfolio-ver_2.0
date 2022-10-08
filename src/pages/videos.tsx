@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Image, Text, Badge, Button, Group, useMantineTheme } from '@mantine/core';
 import b1a from "../images/b1a.png";
 
