@@ -17,3 +17,8 @@ code {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.inactive {
+    color: rgb(20, 220, 150);
+    text-decoration: underline;
+}

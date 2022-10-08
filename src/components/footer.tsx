@@ -1,4 +1,3 @@
-import React from "react";
 import { Anchor, Group, createStyles, ThemeIcon } from '@mantine/core';
 import { BrandGithub, BrandLinkedin, BrandYoutube } from 'tabler-icons-react';
 
