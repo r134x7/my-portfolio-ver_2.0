@@ -15,7 +15,7 @@
 // }
 
 // export default MyApp
-import React, { useState } from "react";
+import { useState } from "react";
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 import Header from "./components/header";
 

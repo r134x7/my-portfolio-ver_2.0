@@ -8,6 +8,7 @@ import Videos from "../pages/Videos";
 import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
 import Footer from "./footer";
+// import "../styles/App.css";
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
   wrapper: { // css-in-js settings for wrapper
@@ -59,7 +60,7 @@ function Header() {
         <div className={classes.wrapper} >
             <h1>r134x7</h1>
             <Group className={classes.child} position="apart" spacing="lg">
-                        <NavLink to={"/"}>
+                        <NavLink to="/" className={({isActive}) =>(isActive ? "active" : "inactive")}>
                             <Anchor color={"teal"}>
                                 <ThemeIcon radius="lg" color="cyan">
                                     <User />
@@ -67,15 +68,15 @@ function Header() {
                                 About
                             </Anchor>
                         </NavLink>
-                        <NavLink to={"/portfolio"} >
-                        <Anchor color={"teal"}>
+                        <NavLink to={"/portfolio"} className={({isActive}) =>(isActive ? "active" : "inactive")} >
+                            <Anchor color={"teal"}>
                         <ThemeIcon radius="lg" color="orange">
                             <Files />
                         </ThemeIcon>
                         Portfolio
                         </Anchor>
                         </NavLink>
-                       <NavLink to={"/videos"} >
+                       <NavLink to={"/videos"} className={({isActive}) =>(isActive ? "active" : "inactive")}>
                         <Anchor color={"teal"}>
                                 <ThemeIcon radius="lg" color="red">
                                     <Video />
@@ -83,7 +84,7 @@ function Header() {
                                 Videos
                         </Anchor>
                         </NavLink>
-                       <NavLink to={"/contact"}>
+                       <NavLink to={"/contact"} className={({isActive}) =>(isActive ? "active" : "inactive")}>
                         <Anchor color={"teal"}>
                             <ThemeIcon radius="lg" color="green">
                                 <Message />
@@ -91,7 +92,7 @@ function Header() {
                         Contact
                         </Anchor>
                         </NavLink>
-                      <NavLink to={"/resume"}>
+                      <NavLink to={"/resume"} className={({isActive}) =>(isActive ? "active" : "inactive")}>
                         <Anchor color={"teal"}>
                         <ThemeIcon radius="lg" color="gray">
                             <FileTypography />
