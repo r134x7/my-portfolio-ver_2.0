@@ -8,6 +8,7 @@ import Portfolio from "../pages/portfolio";
 import Videos from "../pages/videos";
 import Resume from "../pages/resume";
 import Contact from "../pages/contact";
+import Footer from "./footer";
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
   wrapper: { // css-in-js settings for wrapper
@@ -117,6 +118,9 @@ function Header() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resume" element={<Resume />} />
             </Routes>
+        </div>
+        <div>
+            <Footer />
         </div>
         </Router>
       );
