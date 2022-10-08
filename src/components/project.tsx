@@ -1,11 +1,9 @@
-import React from "react";
-import Portfolio from "../pages/portfolio";
-import my2 from "../public/images/my2.jpg"
-import my3 from "../public/images/tech2.jpg"
-import my7 from "../public/images/my7.jpg"
-import my8 from "../public/images/my8.jpg"
-import my9 from "../public/images/my9.jpg"
-import my10 from "../public/images/my10.jpg"
+import my2 from "../images/my2.jpg";
+import my3 from "../images/tech2.jpg";
+import my7 from "../images/my7.jpg";
+import my8 from "../images/my8.jpg";
+import my9 from "../images/my9.jpg";
+import my10 from "../images/my10.jpg";
 
 export const works = [
     {
@@ -13,7 +11,7 @@ export const works = [
         name: "Project S.C.A.L.E.",
         deployedApp: "https://ambitions-scale-up.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/project-scale",
-        image: my8.src,
+        image: my8,
         badge: "TypeScript",
         badgeColour: "blue",
         buttonAppText: "Click here to Deployed App",
@@ -25,7 +23,7 @@ export const works = [
         name: "Nintendo Earnings Data and Other Video Game Companies",
         deployedApp: "https://r134x7.github.io/nintendo-earnings-data-and-other-video-game-companies/",
         githubRepo: "https://github.com/r134x7/nintendo-earnings-data-and-other-video-game-companies",
-        image: my10.src,
+        image: my10,
         badge: "Python and TypeScript",
         badgeColour: "blue",
         buttonAppText: "Click here to Deployed App",
@@ -37,7 +35,7 @@ export const works = [
         name: "Infernal Redux Toolkit Shop",
         deployedApp: "https://shrouded-headland-69573.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
-        image: my9.src,
+        image: my9,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -49,7 +47,7 @@ export const works = [
         name: "GraphQL Book Search",
         deployedApp: "https://intense-everglades-58353.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/graphql-book-search",
-        image: my7.src,
+        image: my7,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -61,7 +59,7 @@ export const works = [
         name: "RunningTracks",
         deployedApp: "https://quiet-reaches-87273.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/RunningTracks",
-        image: my2.src,
+        image: my2,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
@@ -73,7 +71,7 @@ export const works = [
         name: "Tech News Java API",
         deployedApp: "https://rocky-waters-09134.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/tech-news-java-api",
-        image: my3.src,
+        image: my3,
         badge: "Java",
         badgeColour: "orange",
         buttonAppText: "Click here to Deployed App",
