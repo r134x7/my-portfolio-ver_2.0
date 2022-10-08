@@ -24,9 +24,9 @@
 import React, { useState, useEffect } from "react";
 import { Avatar, Box, Space, Text } from "@mantine/core";
 import { useInterval } from "@mantine/hooks";
-import c1b from "../public/images/c1b.png";
+import c1b from "./images/c1b.png";
 
-export default function Index() {
+export default function App() {
 
     const paraOne = `I am Github user r134x7 also known as ggx2ac on some platforms, I recently completed a full-stack web development course via coding boot camp to gain programming skills and to build my portfolio so that I can find a career in web development. My educational background is a Bachelor of Science with a double major in Physics and, Financial Mathematics and Statistics.`;
 
@@ -83,7 +83,7 @@ export default function Index() {
         })}>
             <h1>About me</h1>
             <Space h="md" />
-            <Avatar src={c1b.src} alt="Avatar" radius="lg" size="xl" />
+            <Avatar src={c1b} alt="Avatar" radius="lg" size="xl" />
             <Space h="md" />
             <Text>
                 {text}
