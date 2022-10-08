@@ -1,8 +1,7 @@
-import Head from 'next/head';
 import React, { useState } from "react";
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "./header";
+import Footer from "./footer";
 
 export default function Layout({ children}: {children: React.ReactNode}) {
 

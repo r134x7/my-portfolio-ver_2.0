@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Image, Text, Badge, Button, Group, useMantineTheme } from '@mantine/core';
-import b1a from "../public/images/b1a.png";
+import b1a from "../images/b1a.png";
 
 
 export default function Videos() {
