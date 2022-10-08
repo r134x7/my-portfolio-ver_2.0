@@ -11,9 +11,9 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^4.0.0",
-    "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "tabler-icons-react": "^1.52.0",
     "web-vitals": "^2.1.4"
   },
@@ -21,18 +21,15 @@
     "@types/node": "18.8.2",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
-    "typescript": "4.8.4",
-    "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1"
+    "typescript": "4.8.4"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d .next",
-    "dev": "next dev",
-    "start": "next start",
-    "build": "next build",
-    "test": "next test",
-    "eject": "next eject"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
