@@ -1,9 +1,7 @@
 import React from "react";
 import { Anchor, Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme } from '@mantine/core';
 import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
-import Link from "next/link";
-// import About from "../pages/about";
-import Index from "../pages";
+// import Index from "../App";
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
   wrapper: { // css-in-js settings for wrapper
