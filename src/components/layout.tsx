@@ -15,7 +15,7 @@
 //         <link rel="icon" href="/favicon.ico" />
 //         <meta
 //           name="description"
-//           content="Portfolio page of r134x7 aka ggx2ac"
+//           content="Portfolio page of r134x7"
 //         />
 //       </Head>
 //         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>

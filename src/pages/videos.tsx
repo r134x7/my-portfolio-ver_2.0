@@ -14,7 +14,7 @@ export default function Videos() {
     <div style={{ width: 333, margin: 'auto' }}>
       <Card shadow="sm" p="lg">
         <Card.Section>
-          <Image src={b1a.src} height={250} alt="Video still" />
+          <Image src={b1a} height={250} alt="Video still" />
         </Card.Section>
 
         <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>

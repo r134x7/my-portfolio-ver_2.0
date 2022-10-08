@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://r134x7.github.io/my-portfolio-ver_2.0",
+  "homepage": "https://r134x7.github.io/my-portfolio-ver_2.0/",
   "dependencies": {
     "@mantine/core": "^4.2.12",
     "@mantine/form": "^4.2.12",
