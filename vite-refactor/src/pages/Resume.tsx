@@ -1,5 +1,16 @@
 import { Box, Space, List, ThemeIcon} from "@mantine/core";
-import { BrandHtml5, BrandCss3, BrandJavascript, BrandReactNative, CirclePlus, DeviceMobile, BrandPython, Keyboard, Brackets} from 'tabler-icons-react';
+import { 
+         BrandHtml5,
+         BrandCss3,
+         BrandJavascript,
+         BrandReactNative,
+         CirclePlus,
+         DeviceMobile,
+         BrandPython,
+         Keyboard,
+         Brackets,
+         DeviceDesktopAnalytics,
+        } from 'tabler-icons-react';
 
 export default function Resume() {
   return (
@@ -68,6 +79,13 @@ export default function Resume() {
               </ThemeIcon>
           }>
             Next.js (React framework)
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='red' >
+                <DeviceDesktopAnalytics />
+              </ThemeIcon>
+          }>
+            Vite (Frontend Tooling)
           </List.Item>
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='teal' >
