@@ -1,5 +1,5 @@
 import { Card, Image, Text, Badge, Button, Group, useMantineTheme, SimpleGrid, Box } from '@mantine/core';
-import { works } from '../components/project';
+import { works } from '../../vite-refactor/src/components/project';
 
 export default function Portfolio() {
   const theme = useMantineTheme();

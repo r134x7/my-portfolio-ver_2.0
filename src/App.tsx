@@ -17,7 +17,7 @@
 // export default MyApp
 import { useState } from "react";
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
-import Header from "./components/header";
+import Header from "../vite-refactor/src/components/header";
 
 export default function App() {
 
