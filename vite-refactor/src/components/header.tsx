@@ -61,7 +61,7 @@ function Header() {
                         <Text color={"teal"}>
                         <NavLink
                         className={({isActive}) =>(isActive ? "active" : "inactive")}
-                        to="/ " // "/ " a temporary solution that does not solve this bug that doesn't happen in my other project.
+                        to="/" end
                         >
                                 <ThemeIcon radius="lg" color="cyan">
                                     <User />
