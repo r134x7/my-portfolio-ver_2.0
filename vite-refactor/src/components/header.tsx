@@ -1,11 +1,11 @@
-import { Anchor, Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme, Text } from '@mantine/core';
+import { Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme, Text } from '@mantine/core';
 import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
 import { HashRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; // changed from BrowserRouter to HashRouter to solve client-side issue of refreshing causing 404 error due to GitHub Pages, source: https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
-import About from "../../../src/pages/About";
-import Portfolio from "../../../src/pages/Portfolio";
-import Videos from "../../../src/pages/Videos";
-import Resume from "../../../src/pages/Resume";
-import Contact from "../../../src/pages/Contact";
+import About from "../pages/About";
+import Portfolio from "../pages/Portfolio";
+import Videos from "../pages/Videos";
+import Resume from "../pages/Resume";
+import Contact from "../pages/Contact";
 import Footer from "./footer";
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
