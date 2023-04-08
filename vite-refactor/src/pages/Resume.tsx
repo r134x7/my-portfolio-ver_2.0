@@ -74,13 +74,6 @@ export default function Resume() {
             Mantine (React component library)
           </List.Item>
           <List.Item icon={
-              <ThemeIcon size={24} radius='lg' color='teal' >
-                <BrandReactNative />
-              </ThemeIcon>
-          }>
-            Next.js (React framework)
-          </List.Item>
-          <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='red' >
                 <DeviceDesktopAnalytics />
               </ThemeIcon>
@@ -125,6 +118,20 @@ export default function Resume() {
         <List size="sm">
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='teal' >
+                <BrandReactNative />
+              </ThemeIcon>
+          }>
+            T3 Stack (TypeScript, React, Next.js, Prisma, NextAuth, TailWind CSS, tRPC) 
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <BrandReactNative />
+              </ThemeIcon>
+          }>
+            Next.js (React framework)
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
                 <CirclePlus />
               </ThemeIcon>
           }>Node.js (JavaScript back-end).</List.Item>
@@ -165,6 +172,11 @@ export default function Resume() {
                 <Keyboard />
               </ThemeIcon>
           }>Engram Keyboard Layout with Caps Lock used as Backspace. (Primary typing method)</List.Item>
+        <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='red' >
+                <Keyboard />
+              </ThemeIcon>
+          }>Vim (VS Code Extension), improves productivity when coding.</List.Item>
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='cyan' >
                 <BrandPython />

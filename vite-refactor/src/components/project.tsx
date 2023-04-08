@@ -2,12 +2,24 @@ import my2 from "../images/my2.jpg";
 import my3 from "../images/tech2.jpg";
 import my7 from "../images/my7.jpg";
 import my8 from "../images/my8.jpg";
-import my9 from "../images/my9.jpg";
+import my9 from "../images/psmk2a1.jpg";
 import my10 from "../images/my10.jpg";
 
 export const works = [
     {
         id: 1,
+        name: "Project S.C.A.L.E. Mk2",
+        deployedApp: "https://project-scale-mk2-next.vercel.app/",
+        githubRepo: "https://github.com/r134x7/project-scale-mk2",
+        image: my9,
+        badge: "TypeScript",
+        badgeColour: "blue",
+        buttonAppText: "Click here to Deployed App",
+        buttonRepoText: "Click here to GitHub Repo",
+        textDescription: "Self-learning the latest technologies that benefit most from using TypeScript by        using the T3 Stack. The project is a remake of Project S.C.A.L.E. but with new features to increase social engagement. Deployed on Vercel and using the power of PlanetScale for the MySQL database, this is the combo to move away from the no longer free services of Heroku."
+    },
+    {
+        id: 2,
         name: "Project S.C.A.L.E.",
         deployedApp: "https://ambitions-scale-up.herokuapp.com/",
         githubRepo: "https://github.com/r134x7/project-scale",
@@ -19,7 +31,7 @@ export const works = [
         textDescription: "The culmination of everything I learned at the coding boot camp. A full stack application used for people who want to change who they are and can use the app daily to track their data input which is displayed in line charts."
     },
     {
-        id: 1,
+        id: 3,
         name: "Nintendo Earnings Data and Other Video Game Companies",
         deployedApp: "https://r134x7.github.io/nintendo-earnings-data-and-other-video-game-companies/",
         githubRepo: "https://github.com/r134x7/nintendo-earnings-data-and-other-video-game-companies",
@@ -29,18 +41,6 @@ export const works = [
         buttonAppText: "Click here to Deployed App",
         buttonRepoText: "Click here to GitHub Repo",
         textDescription: " An ever-evolving personal project, what first started out with using Java Code (not on GitHub) then refactored into Python code to output data from earnings results of video game companies to post online now includes a Front-End deployed web app using React and TypeScript so that people can now view that data from my webpage. Lots of data manipulation used to display data you would not find in a company’s earnings release."
-    },
-    {
-        id: 3,
-        name: "Infernal Redux Toolkit Shop",
-        deployedApp: "https://shrouded-headland-69573.herokuapp.com/",
-        githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
-        image: my9,
-        badge: "JavaScript",
-        badgeColour: "yellow",
-        buttonAppText: "Click here to Deployed App",
-        buttonRepoText: "Click here to GitHub Repo",
-        textDescription: "A full-stack web application of an online store, uses Redux Toolkit to handle state management throughout the app. The app was refactored from code that used React’s Context API to use Redux Toolkit instead. The online store also uses the Stripe Payment system (In Testing Mode) where purchases of the products can be made (as a simulation, no real purchasing occurs). JSON Web Token authentication is used when signing up or logging into your account."
     },
     {
         id: 4,
