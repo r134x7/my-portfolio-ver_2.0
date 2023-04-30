@@ -1,6 +1,7 @@
 import my2 from "../images/my2.jpg";
 import my3 from "../images/tech2.jpg";
-import my7 from "../images/my9.jpg";
+import my4 from "../images/my9.jpg";
+import my7 from "../images/my7.jpg";
 import my8 from "../images/my8.jpg";
 import my9 from "../images/psmk2a1.jpg";
 import my10 from "../images/my10.jpg";
@@ -16,7 +17,7 @@ export const works = [
         badgeColour: "blue",
         buttonAppText: "Click here to Deployed App",
         buttonRepoText: "Click here to GitHub Repo",
-        textDescription: "Self-learning the latest technologies that benefit most from using TypeScript by        using the T3 Stack. The project is a remake of Project S.C.A.L.E. but with new features to increase social engagement. Deployed on Vercel and using the power of PlanetScale for the MySQL database, this is the combo to move away from the no longer free services of Heroku."
+        textDescription: "Self-learning the latest technologies that benefit most from using TypeScript by using the T3 Stack. The project is a remake of Project S.C.A.L.E. but with new features to increase social engagement. Use your Discord account to sign in via OAuth2 provided by NextAuth.js. See Project Scale in this page for context."
     },
     {
         id: 2,
@@ -59,7 +60,7 @@ export const works = [
         name: "Infernal Redux Toolkit Shop",
         deployedApp: "https://graphql-book-search.onrender.com/",
         githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
-        image: my7,
+        image: my4,
         badge: "JavaScript",
         badgeColour: "yellow",
         buttonAppText: "Click here to Deployed App",
