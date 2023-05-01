@@ -58,7 +58,7 @@ export const works = [
     {
         id: 7,
         name: "Infernal Redux Toolkit Shop",
-        deployedApp: "https://graphql-book-search.onrender.com/",
+        deployedApp: "https://infernal-redux-toolkit-shop.onrender.com/",
         githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
         image: my4,
         badge: "JavaScript",
