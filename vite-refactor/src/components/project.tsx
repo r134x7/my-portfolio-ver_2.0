@@ -67,6 +67,18 @@ export const works = [
         buttonRepoText: "Click here to GitHub Repo",
         textDescription: "A React app online shop using Redux Toolkit to handle the state and state changes throughout the app, react-redux is used specifically for useSelector and useDispatch redux functions in a react app. The app was refactored from using React's Context API to using Redux Toolkit. The app uses MongoDB for the database and mutations and queries for the database are handled by Apollo GraphQL. The online shop uses the Stripe API payment system but no actual payments are made as it is a test system. Purchases made on the app will appear in the order history of your account. JWT authentication is used when signing or logging in a user."
     }, 
+    {
+        id: 7,
+        name: "Angular e-commerce store",
+        deployedApp: "https://angular-e-commerce-store-omega.vercel.app/",
+        githubRepo: "https://github.com/r134x7/angular-e-commerce-store",
+        image: my4,
+        badge: "TypeScript",
+        badgeColour: "blue",
+        buttonAppText: "Click here to Deployed App",
+        buttonRepoText: "Click here to GitHub Repo",
+        textDescription: "Remake of the Infernal Redux Toolkit Shop by using Angular version 16 with Signals and RxJS to handle things without Redux. Now contains a version of the webpage using NgRx to show it working using State Management like Redux (when you are at the deployed app, click on “Go to NgRx Store”). This is a front-end only app."
+    }, 
     // {
     //     id: 5,
     //     name: "RunningTracks",
