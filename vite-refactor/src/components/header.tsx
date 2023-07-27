@@ -1,5 +1,5 @@
 import { Group, createStyles, ThemeIcon, ActionIcon, useMantineColorScheme, Text } from '@mantine/core';
-import { User, Files, Message, Video, FileTypography, Sun, MoonStars } from 'tabler-icons-react';
+import { User, Files, Message, Video, FileTypography, Sun, MoonStars, Books } from 'tabler-icons-react';
 import { HashRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; // changed from BrowserRouter to HashRouter to solve client-side issue of refreshing causing 404 error due to GitHub Pages, source: https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
 import About from "../pages/About";
 import Portfolio from "../pages/Portfolio";
@@ -7,6 +7,7 @@ import Videos from "../pages/Videos";
 import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
 import Footer from "./footer";
+import Learning from '../pages/Learning';
 
 const useStyles = createStyles((theme, _params, getRef) => ({ // basic usage example, source docs: https://mantine.dev/theming/create-styles/
   wrapper: { // css-in-js settings for wrapper
@@ -86,6 +87,14 @@ function Header() {
                             </NavLink>
                         </Text>
                         <Text color={"teal"}>
+                            <NavLink className={({isActive}) =>(isActive ? "active" : "inactive")} to={"/learning"}>
+                                <ThemeIcon radius="lg" color="indigo">
+                                    <Books />
+                                </ThemeIcon>
+                               Learning 
+                            </NavLink>
+                        </Text>
+                        <Text color={"teal"}>
                             <NavLink className={({isActive}) =>(isActive ? "active" : "inactive")} to={"/contact"}>
                                 <ThemeIcon radius="lg" color="green">
                                     <Message />
@@ -118,6 +127,7 @@ function Header() {
                 <Route path="/videos" element={<Videos />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resume" element={<Resume />} />
+                <Route path="/learning" element={<Learning/>} />
                 <Route path="*" element={<About />} />
             </Routes>
         </div>

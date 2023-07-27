@@ -92,6 +92,20 @@ export default function Resume() {
                 <CirclePlus />
               </ThemeIcon>
           }>
+            Angular v16 
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
+            RxJs and NgRx 
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <CirclePlus />
+              </ThemeIcon>
+          }>
             Redux Toolkit
           </List.Item>
           <List.Item icon={
