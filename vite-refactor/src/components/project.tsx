@@ -5,6 +5,7 @@ import my7 from "../images/my7.jpg";
 import my8 from "../images/my8.jpg";
 import my9 from "../images/psmk2a1.jpg";
 import my10 from "../images/my10.jpg";
+import pic1 from "../images/canvasthumbnail2.jpg"
 
 export const works = [
     {
@@ -56,7 +57,7 @@ export const works = [
         textDescription: "A React app Book Search \"engine\" using Google Books API to handle GET requests when searching for book titles. Apollo GraphQL is used for handling user data i.e. signing/logging a user, saving the list of books and removing books from their saved list. JWT authentication is used when signing or logging in a user. Apollo GraphQL saved books are cached to make it quicker to remove books from your list as opposed to making network calls to the database. The database used is MongoDB."
     },
     {
-        id: 7,
+        id: 5,
         name: "Infernal Redux Toolkit Shop",
         deployedApp: "https://infernal-redux-toolkit-shop.onrender.com/",
         githubRepo: "https://github.com/r134x7/infernal-redux-toolkit-shop",
@@ -68,7 +69,7 @@ export const works = [
         textDescription: "A React app online shop using Redux Toolkit to handle the state and state changes throughout the app, react-redux is used specifically for useSelector and useDispatch redux functions in a react app. The app was refactored from using React's Context API to using Redux Toolkit. The app uses MongoDB for the database and mutations and queries for the database are handled by Apollo GraphQL. The online shop uses the Stripe API payment system but no actual payments are made as it is a test system. Purchases made on the app will appear in the order history of your account. JWT authentication is used when signing or logging in a user."
     }, 
     {
-        id: 7,
+        id: 6,
         name: "Angular e-commerce store",
         deployedApp: "https://angular-e-commerce-store-omega.vercel.app/",
         githubRepo: "https://github.com/r134x7/angular-e-commerce-store",
@@ -79,18 +80,18 @@ export const works = [
         buttonRepoText: "Click here to GitHub Repo",
         textDescription: "Remake of the Infernal Redux Toolkit Shop by using Angular version 16 with Signals and RxJS to handle things without Redux. Now contains a version of the webpage using NgRx to show it working using State Management like Redux (when you are at the deployed app, click on “Go to NgRx Store”). This is a front-end only app."
     }, 
-    // {
-    //     id: 5,
-    //     name: "RunningTracks",
-    //     deployedApp: "https://quiet-reaches-87273.herokuapp.com/",
-    //     githubRepo: "https://github.com/r134x7/RunningTracks",
-    //     image: my2,
-    //     badge: "JavaScript",
-    //     badgeColour: "yellow",
-    //     buttonAppText: "Click here to Deployed App",
-    //     buttonRepoText: "Click here to GitHub Repo",
-    //     textDescription: "This is a full-stack application with the MVC model where Handlebars is used for the view, MySQL is used for the model with Sequelize as the ORM and Express is used as the controller for routing all the CRUD operations. The app takes in data input from users who are fitness runners and displays their data in bar charts. Users who post their runs can have other users comment on the runs."
-    // },
+    {
+        id: 7,
+        name: "Nintendo Earnings Canvas",
+        deployedApp: "https://youtu.be/N5sT07oee_I",
+        githubRepo: "https://github.com/r134x7/nintendo-earnings-canvas",
+        image: pic1,
+        badge: "TypeScript",
+        badgeColour: "blue",
+        buttonAppText: "Click here to Deployed App",
+        buttonRepoText: "Click here to GitHub Repo",
+        textDescription: "A project using the data from my other repository: Nintendo Earnings Data and Other Video Game Companies. By using Motion Canvas I can visualize data with the Canvas API and output it into MP4 file format."
+    },
     // {
     //     id: 6,
     //     name: "Tech News Java API",

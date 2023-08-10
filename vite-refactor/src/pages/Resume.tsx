@@ -10,6 +10,7 @@ import {
          Keyboard,
          Brackets,
          DeviceDesktopAnalytics,
+         DeviceDesktop
         } from 'tabler-icons-react';
 
 export default function Resume() {
@@ -65,6 +66,13 @@ export default function Resume() {
               </ThemeIcon>
           }>
             React
+          </List.Item>
+          <List.Item icon={
+              <ThemeIcon size={24} radius='lg' color='teal' >
+                <DeviceDesktop />
+              </ThemeIcon>
+          }>
+            Motion Canvas
           </List.Item>
           <List.Item icon={
               <ThemeIcon size={24} radius='lg' color='teal' >
